@@ -12,7 +12,7 @@ var url = require("url");
 var homeHtmlPage = require("./files/html/home.html");
 var loginHtmlPage = require("./files/html/login.html");
 var logoutHtmlPage = require("./files/html/logout.html");
-var registerHtmlPage = require("./files/html/register.html");
+var settingsHtmlPage = require("./files/html/settings.html");
 var shopHtmlPage = require("./files/html/shop.html");
 
 
@@ -25,7 +25,7 @@ var shopHtmlPage = require("./files/html/shop.html");
 
 var Server = http.createServer(function (req, res) {
      
-     var page = url.parse(req.res).query;
+     var page = url.parse(req.res).pathname;
      
      if (page == "/home") {
           
@@ -43,8 +43,15 @@ var Server = http.createServer(function (req, res) {
      
      if (page == "/logout") {
           
-          res.writeHead(200, {"Content-Type": "text/html"})
+          res.writeHead(200, {"Content-Type": "text/hml"})
           res.write(logoutHtmlPage)
+          
+     }
+     
+     if (page == "/settings") {
+          
+          res.writeHead(200, {"Content-Type": "text/html"})
+          res.write(settingsHtmlPage)
           
      }
      
