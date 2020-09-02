@@ -9,10 +9,10 @@ var url = require("url");
 
 // default files
 
-var homeHtmlPage = require("./web-pages/html/home.html");
-var loginHtmlPage = require("./web-pages/html/login.html");
-var logoutHtmlPage = require("./web-pages/html/logout.html");
-var shopHtmlPage = require("./web-pages/html/shop.html");
+var homeHtmlPage = require("./pages/html/home.html");
+var loginHtmlPage = require("./pages/html/login.html");
+var logoutHtmlPage = require("./pages/html/logout.html");
+var shopHtmlPage = require("./pages/html/shop.html");
 
 
 // default datas
