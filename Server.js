@@ -9,6 +9,8 @@ var url = require("url");
 
 // default files
 
+var configFile = require("./config.json");
+
 var homeHtmlPage = require("./files/html/home.html");
 var loginHtmlPage = require("./files/html/login.html");
 var logoutHtmlPage = require("./files/html/logout.html");
@@ -18,7 +20,8 @@ var shopHtmlPage = require("./files/html/shop.html");
 
 // default datas
 
-
+var serverAddress = configFile.serverConfig.serverAddress;
+var serverPort = configFile.serverConfig.serverPort;
 
 
 // Server function
